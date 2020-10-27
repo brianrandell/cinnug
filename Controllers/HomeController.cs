@@ -20,11 +20,13 @@ namespace cinnug.Controllers
 
         public IActionResult Index()
         {
+         
             return View();
         }
 
         public IActionResult Privacy()
         {
+               ViewBag.DemoData = "Hello WKRP!";
             return View();
         }
 
