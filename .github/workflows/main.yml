@@ -25,3 +25,5 @@ jobs:
         run: dotnet restore cinnug.csproj
       - name: Build
         run: dotnet build cinnug.csproj --configuration Release --no-restore
+      - name: Publish
+        run: dotnet publish cinnug.csproj --configuration Release --output ./output
